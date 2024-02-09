@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafío To do List</title>
     <!--CDN FONTAWSOME-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -16,30 +15,33 @@
     <main>
     <div class="main-container">
         <div class="input-container">
-            <input type="text" class="input-element" id="input-element" placeholder="Ingresa una nueva tarea...">
-            <input type="button" class="button-element" id="button-element" value="+">
+            <input type="text" class="input-element" id="input-element" placeholder="Escribe una nueva tarea...">
+            <input type="button" class="button-element" id="button-element" value="ingresar">
         </div>
 
-        <div class="resume-container">
-            <div class="total-container"><span>Total de tareas: </span></div>
-            <div class="realizadas-container"><span>Tareas realizadas: </span></div>
+        <div class="summary-container" id="summary-container">
+           
         </div>
 
-        <div class="task-list">
-            <table class="tabla">
-                    <tr >
-                        <th style="width:10%"><h3>ID</h3></th>
-                        <th style="width:60%"><h3>TAREA</h3></th> 
-                        <th style="width:20%"><h3>ESTADO</h3></th>
-                        <th style="width:10%"><i class="fa-solid fa-trash"></i></th>
-                    </tr>
+        <div class="task-container">
+            <table class="tabla" >
+                <thead>
                     <tr>
-
+                        <th style="width:50px"><h3>ID</h3></th>
+                        <th style="width:600px"><h3>TAREA</h3></th> 
+                        <th style="width:200px"><h3>ESTADO</h3></th>
+                        <th style="width:50px"></th>
                     </tr>
+                </thead>
+
+                <tbody id="task-table">
+
+                </tbody>
         </table>
 
         </div>
         </div>
     </main>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

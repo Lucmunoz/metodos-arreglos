@@ -30,26 +30,38 @@ header{
     column-gap: 20px;
 }
 
-.resume-container{
+.summary-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    column-gap: 40px;
 }
 
-.total-container, .realizadas-container {
-    width: 200px;
-}
+
 
 .button-element{
-    width: 30px;
+    background: aqua;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+	cursor: pointer;
 }
 
-.task-list{    
-    width: 70%;
+.button-element:hover{
+    background: rgb(1, 219, 219);
+}
+
+
+
+.task-container{    
+    width: 80%;
+    display: flex;
+    justify-content: center;
     }
 
 .tabla{
-    width: 100%;
     border-collapse: collapse;
 }
 
@@ -62,3 +74,12 @@ th {
     border-bottom: 2px solid;
 }
 
+tbody{
+    text-align: center;
+}
+
+tbody tr:first-child {
+    height: 40px;
+    vertical-align: bottom;
+ 
+  }
