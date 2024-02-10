@@ -38,8 +38,7 @@ header{
 }
 
 
-
-.button-element{
+.button-element {
     background: aqua;
     border: none;
     border-radius: 5px;
@@ -47,6 +46,12 @@ header{
     padding-right: 10px;
     font-size: 16px;
 	cursor: pointer;
+}
+
+.delete-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 .button-element:hover{
